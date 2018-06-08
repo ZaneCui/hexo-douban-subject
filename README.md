@@ -3,7 +3,7 @@ A small script plugin for hexo that help show a list of movies, books, games.
 
 一个 [Hexo](https://hexo.io) 的脚本插件，帮助在博客md文章中插入图书、电影、游戏列表。（信息来自豆瓣）
 
-----------
+
 ## 安装/Installation
 1. 下载脚本插件`hexo-douban-subject.js`。
  / Download the script file.
@@ -19,7 +19,7 @@ wget -c https://github.com/ZaneCui/hexo-douban-subject/blob/master/hexo-douban-s
 ## 使用/Use
 1. 插入书籍信息
 
-在Markdown文章中写入
+在Markdown文章中直接写入
 ```
 {% books %}
 {% bookisbn 9787300088549 "/static/about/1.jpg" %}
@@ -28,10 +28,12 @@ wget -c https://github.com/ZaneCui/hexo-douban-subject/blob/master/hexo-douban-s
 {% endbooks %}
 ```
 说明
-- `{% books %}` `{% endbooks %}`：书籍信息插入的开始、结束标识
+- `{% books %}`：插入书籍信息的开始标识
 - `{% bookisbn xxx url %}`：通过isbn获取书籍信息。xxx为isbn号，url为书籍封面照片地址（可不传入url，自动通过豆瓣获取）
 - `{% bookid xxx url %}`：通过条目id获取书籍信息。xxx为id号，url为书籍封面照片地址（可不传入url，自动通过豆瓣获取）
+- `{% endbooks %}`：插入书籍信息的结束标识
 
 ## 截图/Screenshots
 Hexo NexT.Gemini 主题
+
 ![图片加载失败](./screenshot/example.png '示例')
